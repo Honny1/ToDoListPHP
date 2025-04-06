@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
-$servername = "localhost"; // The hostname of the database server
-$username = "root";        // The username to connect to the database
-$password = "";            // The password to connect to the database
-$dbname = "todo_list";     // The name of the database to connect to
+$servername = getenv('AZURE_MYSQL_HOST');     // The hostname of the database server
+$username = getenv('AZURE_MYSQL_USERNAME');   // The username to connect to the database
+$password = getenv('AZURE_MYSQL_PASSWORD');   // The password to connect to the database
+$dbname = getenv('AZURE_MYSQL_DBNAME');       // The name of the database to connect to
 
 // Create a new MySQLi object to establish a database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
