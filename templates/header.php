@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="<?php echo getenv('AZURE_CDN'); ?>assets/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo getenv('AZURE_CDN'); ?>assets/styles.css">
 </head>
 <body>
     <div class="container">
